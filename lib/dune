@@ -1,0 +1,11 @@
+(library
+ (name dune_ppx_issue_flags)
+ (package dune_ppx_issue_flags)
+ (preprocess
+  (pps
+   ppxlib.metaquot
+   ppxlib.traverse
+   styled-ppx.lib
+   --
+   --compat-with-bs-emotion-ppx
+   true)))
